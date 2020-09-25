@@ -115,7 +115,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 
     // Contains the content to be added to the new .md file
     const readmeContent = 
-        `# ${response.titleInput}
+        `# ${response.titleInput} ![License Badge for ${licenseTitle}](https://img.shields.io/badge/<License>-<${licenseTitle}>-<green>)
 
 # Description
 ${response.descInput}
@@ -152,8 +152,6 @@ ${response.testInstructionsInput}
 ### Questions
 Please direct questions to my github account, ${response.usernameInput} found at [${githubLink}](${githubLink})
 Alternatively you can reach me by email at ${response.emailInput}
-
-![License Badge for ${licenseTitle}](https://img.shields.io/badge/<License>-<${licenseTitle}>-<green>)
 `;
 
     console.log(readmeContent);

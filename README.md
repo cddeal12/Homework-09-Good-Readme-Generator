@@ -1,4 +1,4 @@
-# Homework-09-Good-Readme-Generator
+# Homework-09-Good-Readme-Generator ![License Badge for MIT](https://img.shields.io/badge/<License>-<MIT>-<green>)
 
 # Description
 This is a command-line application used to create a good readme based on user inputs.
@@ -33,5 +33,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### Questions
 Please direct questions to my github account, cddeal12 found at [https://github.com/cddeal12](https://github.com/cddeal12)
 Alternatively you can reach me by email at cddeal12@gmail.com
-
-![License Badge for MIT](https://img.shields.io/badge/<License>-<MIT>-<green>)
