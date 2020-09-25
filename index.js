@@ -64,9 +64,13 @@ inquirer.prompt([
     const githubLink = "https://github.com/" + response.usernameInput;
 
     // Determines which license info should be used
-    if (response.license === "Apache") {
-        const licenseTitle = "Apache v2.0";
-        const licenseInfo = `Copyright ${response.currentYearInput} ${response.nameInput}
+
+    var licenseTitle = "";
+    var licenseInfo = "";
+
+    if (response.licenseInput === "Apache") {
+        licenseTitle = "Apache v2.0";
+        licenseInfo = `Copyright ${response.currentYearInput} ${response.nameInput}
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -79,9 +83,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.`;
-    } else if (response.license === "MIT") {
-        const licenseTitle = "MIT";
-        const licenseInfo = `${response.title}
+    } else if (response.licenseInput === "MIT") {
+        licenseTitle = "MIT";
+        licenseInfo = `${response.titleInput}
 
 Copyright © ${response.currentYearInput} ${response.nameInput}
         
@@ -90,9 +94,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
         
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`;
-    } else if (response.license === "GPL") {
-        const licenseTitle = "GPLv3";
-        const licenseInfo = `${response.title}
+    } else if (response.licenseInput === "GPL") {
+        licenseTitle = "GPLv3";
+        licenseInfo = `${response.title}
 Copyright (C) ${response.currentYearInput}  ${response.nameInput}
     
 This program is free software: you can redistribute it and/or modify
