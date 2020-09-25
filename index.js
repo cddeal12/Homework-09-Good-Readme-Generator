@@ -121,28 +121,34 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 ${response.descInput}
             
 ## Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#testing)
+* [Questions](#questions)
 
+<a name="installation"><a>
 ### Installation
 ${response.instructionsInput}
 
+<a name="usage"><a>
 ### Usage
 ${response.usageInput}
 
+<a name="license"><a>
 ### License
 ${licenseInfo}
 
+<a name="contributing"><a>
 ### Contributing Instructions
 ${response.contributeInput}
 
+<a name="testing"><a>
 ### Testing Instructions
 ${response.testInstructionsInput}
 
+<a name="questions"><a>
 ### Questions
 Please direct questions to my github account, ${response.usernameInput} found at [${githubLink}](${githubLink})
 Alternatively you can reach me by email at ${response.emailInput}
